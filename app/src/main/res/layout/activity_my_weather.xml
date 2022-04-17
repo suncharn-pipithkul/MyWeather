@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDay"
+    tools:context=".MyWeatherActivity">
+
+    <TextView
+        android:id="@+id/tmr_6am_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="6 AM"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tmr_6am_icon_image_view"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/tmr_6am_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_6am_icon_image_view" />
+
+    <TextView
+        android:id="@+id/tmr_9am_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="9 AM"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tmr_9am_icon_image_view"
+        app:layout_constraintStart_toStartOf="@+id/tmr_9am_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_9am_icon_image_view" />
+
+    <TextView
+        android:id="@+id/tmr_12pm_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="12 PM"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tmr_12pm_icon_image_view"
+        app:layout_constraintStart_toStartOf="@+id/tmr_12pm_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_12pm_icon_image_view" />
+
+    <TextView
+        android:id="@+id/tmr_3pm_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="3 PM"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tmr_3pm_icon_image_view"
+        app:layout_constraintStart_toStartOf="@+id/tmr_3pm_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_3pm_icon_image_view" />
+
+    <TextView
+        android:id="@+id/tmr_6pm_time_text_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="6 PM"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tmr_6pm_icon_image_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tmr_6pm_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_6pm_icon_image_view" />
+
+    <TextView
+        android:id="@+id/tmr_9pm_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="9 PM"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tmr_9pm_icon_image_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tmr_9pm_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_9pm_icon_image_view" />
+
+    <ImageView
+        android:id="@+id/tmr_6am_icon_image_view"
+        android:layout_width="46dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/tmr_3am_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_6am_temp_text_view"
+        app:srcCompat="@drawable/default_weather" />
+
+    <ImageView
+        android:id="@+id/tmr_9am_icon_image_view"
+        android:layout_width="46dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/tmr_6am_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_9am_temp_text_view"
+        app:srcCompat="@drawable/default_weather" />
+
+    <ImageView
+        android:id="@+id/tmr_12pm_icon_image_view"
+        android:layout_width="46dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/tmr_3pm_icon_image_view"
+        app:layout_constraintStart_toEndOf="@+id/tmr_9am_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_12pm_temp_text_view"
+        app:srcCompat="@drawable/default_weather" />
+
+    <ImageView
+        android:id="@+id/tmr_3pm_icon_image_view"
+        android:layout_width="46dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/tmr_6pm_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_3pm_temp_text_view"
+        app:srcCompat="@drawable/default_weather" />
+
+    <ImageView
+        android:id="@+id/tmr_6pm_icon_image_view"
+        android:layout_width="44dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/tmr_9pm_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_6pm_temp_text_view"
+        app:srcCompat="@drawable/default_weather" />
+
+    <ImageView
+        android:id="@+id/tmr_9pm_icon_image_view"
+        android:layout_width="44dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_9pm_temp_text_view"
+        app:srcCompat="@drawable/default_weather" />
+
+    <TextView
+        android:id="@+id/tmr_6am_temp_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="1°"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tmr_6am_icon_image_view"
+        app:layout_constraintStart_toStartOf="@+id/tmr_6am_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_date_text_view" />
+
+    <TextView
+        android:id="@+id/tmr_9am_temp_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="2°"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tmr_9am_icon_image_view"
+        app:layout_constraintStart_toStartOf="@+id/tmr_9am_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_date_text_view" />
+
+    <TextView
+        android:id="@+id/tmr_12pm_temp_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="3°"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tmr_12pm_icon_image_view"
+        app:layout_constraintStart_toStartOf="@+id/tmr_12pm_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_date_text_view" />
+
+    <TextView
+        android:id="@+id/tmr_3pm_temp_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="4°"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tmr_3pm_icon_image_view"
+        app:layout_constraintStart_toStartOf="@+id/tmr_3pm_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_date_text_view" />
+
+    <TextView
+        android:id="@+id/tmr_6pm_temp_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="5°"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tmr_6pm_icon_image_view"
+        app:layout_constraintStart_toStartOf="@+id/tmr_6pm_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_date_text_view" />
+
+    <TextView
+        android:id="@+id/tmr_9pm_temp_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="6°"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tmr_9pm_icon_image_view"
+        app:layout_constraintStart_toStartOf="@+id/tmr_9pm_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_date_text_view" />
+
+    <EditText
+        android:id="@+id/search_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/search_hint"
+        android:inputType="text"
+        android:background="@drawable/edit_text_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:imeOptions="actionDone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/current_temp_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="58sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/query_time_text_view" />
+
+    <!--<Button
+        android:id="@+id/update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_temp_text_view" />-->
+
+    <TextView
+        android:id="@+id/degree_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/degree_text"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/current_temp_text_view"
+        app:layout_constraintStart_toEndOf="@+id/current_temp_text_view" />
+
+    <TextView
+        android:id="@+id/weather_description_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="weather description"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/current_weather_icon_image_view"
+        app:layout_constraintStart_toStartOf="@+id/current_weather_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/current_weather_icon_image_view" />
+
+    <TextView
+        android:id="@+id/query_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="query time"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_edit_text" />
+
+    <ImageView
+        android:id="@+id/current_weather_icon_image_view"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_edit_text"
+        app:srcCompat="@drawable/default_weather" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="128dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_description_text_view" />
+
+    <TextView
+        android:id="@+id/tmr_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tmr_text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/tmr_date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="tmr date"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_text_view" />
+
+    <TextView
+        android:id="@+id/tmr_3am_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="3 AM"
+        app:layout_constraintEnd_toEndOf="@+id/tmr_3am_icon_image_view"
+        app:layout_constraintStart_toStartOf="@+id/tmr_3am_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_3am_icon_image_view"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/tmr_3am_icon_image_view"
+        android:layout_width="46dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_3am_temp_text_view"
+        app:srcCompat="@drawable/default_weather" />
+
+    <TextView
+        android:id="@+id/tmr_3am_temp_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="0°"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tmr_3am_icon_image_view"
+        app:layout_constraintStart_toStartOf="@+id/tmr_3am_icon_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tmr_date_text_view" />
+
+    <ImageButton
+        android:id="@+id/update_image_button"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/query_time_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/search_edit_text"
+        app:srcCompat="@drawable/update_arrow" />
+
+</android.support.constraint.ConstraintLayout>

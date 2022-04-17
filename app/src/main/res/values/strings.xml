@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyWeather</string>
+    <string name="search_hint">Enter a city here</string>
+    <string name="degree_text">°F</string>
+    <string name="tmr_text">Tomorrow</string>
+    <string name="update_text">Update</string>
+</resources>
